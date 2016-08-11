@@ -1,6 +1,10 @@
 ### 介绍：
 
-基于bootstrap3，用来生成quartz cron表达式，特别感谢博主：http://www.cnblogs.com/yanweidie/p/3537144.html和https://github.com/hsal/cronGen ，插件在这两者的基础上进行合并和优化,插件使用简单
+基于bootstrap3，用来生成quartz cron表达式，可配置弹出窗口的位置。
+特别鸣谢：
+http://www.cnblogs.com/yanweidie/p/3537144.html
+https://github.com/hsal/cronGen
+插件在这两者的基础上进行合并和优化,插件使用简单，下一步计划完善反向解析功能。
 
 ### 使用示例：
 1、引入依赖

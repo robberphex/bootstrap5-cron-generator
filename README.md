@@ -13,7 +13,7 @@ https://github.com/hsal/cronGen
     <link href="font/font-awesome.min.css" rel="stylesheet">
     <link href="cronGen.css" rel="stylesheet">
     <script src="jquery-2.1.4.min.js"></script>
-    <script src="cronGen.min.new.js"></script>
+    <script src="cronGen.min.js"></script>
     <script src="bootstrap.min.js"></script>
 ```
 

@@ -10,7 +10,7 @@
             options = $.extend({}, $.fn.cronGen.defaultOptions, options);
             //create top menu
             var cronContainer = $("<div/>", { id: "CronContainer", style: "display:none;width:300px;height:300px;" });
-            var mainDiv = $("<div/>", { id: "CronGenMainDiv", style: "width:410px;height:300px;" });
+            var mainDiv = $("<div/>", { id: "CronGenMainDiv", style: "width:410px;height:320px;" });
             var topMenu = $("<ul/>", { "class": "nav nav-tabs", id: "CronGenTabs" });
             $('<li/>', { 'class': 'active' }).html($('<a id="SecondlyTab" href="#Secondly">秒</a>')).appendTo(topMenu);
             $('<li/>').html($('<a id="MinutesTab" href="#Minutes">分钟</a>')).appendTo(topMenu);
@@ -22,10 +22,10 @@
             $(topMenu).appendTo(mainDiv);
 
             //create what's inside the tabs
-            var container = $("<div/>", { "class": "container-fluid", "style": "margin-top: 30px;margin-left: -14px;" });
+            var container = $("<div/>", { "class": "container-fluid", "style": "margin-top: 10px;margin-left: -14px;" });
             var row = $("<div/>", { "class": "row-fluid" });
             var span12 = $("<div/>", { "class": "span12" });
-            var tabContent = $("<div/>", { "class": "tab-content", "style": "border:0px; margin-top:-20px;" });
+            var tabContent = $("<div/>", { "class": "tab-content", "style": "border:0px; margin-top:-10px;" });
 
 
             //creating the secondsTab

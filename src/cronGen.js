@@ -405,7 +405,13 @@
       // Replace the input with an input group
       var $g = $("<div>").addClass("input-group");
       // Add an input
-      var $i = $("<input>", { type: 'text', placeholder: 'cron表达式...' }).addClass("form-control").val($(that).val());
+      var $i = $("<input>", { type: 'text', placeholder: 'cron表达式...' })
+        .addClass("form-control")
+        .addClass("cronGen-display-input")
+        .val($(that).val());
+      $i.change(function () {
+        that.val($i.val());
+      });
       $i.appendTo($g);
       // Add the button
       var $b = $(`<button class="btn btn-outline-secondary"><i class="fa fa-edit"></i></button>`);
@@ -952,6 +958,9 @@
     initObj: function (strVal, strid) {
       var ary = null;
       var objRadio = $("input[name='" + strid + "'");
+      if (strVal == null) {
+        strVal = "";
+      }
       if (strVal == "*") {
         objRadio.eq(0).attr("checked", "checked");
       } else if (strVal.split('-').length > 1) {
@@ -978,6 +987,9 @@
     initDay: function (strVal) {
       var ary = null;
       var objRadio = $("input[name='day'");
+      if (strVal == null) {
+        strVal = "";
+      }
       if (strVal == "*") {
         objRadio.eq(0).attr("checked", "checked");
       } else if (strVal == "?") {
@@ -1010,6 +1022,9 @@
     initMonth: function (strVal) {
       var ary = null;
       var objRadio = $("input[name='month'");
+      if (strVal == null) {
+        strVal = "";
+      }
       if (strVal == "*") {
         objRadio.eq(0).attr("checked", "checked");
       } else if (strVal == "?") {
@@ -1038,6 +1053,9 @@
     initWeek: function (strVal) {
       var ary = null;
       var objRadio = $("input[name='week'");
+      if (strVal == null) {
+        strVal = "";
+      }
       if (strVal == "*") {
         objRadio.eq(0).attr("checked", "checked");
       } else if (strVal == "?") {
@@ -1068,6 +1086,9 @@
     initYear: function (strVal) {
       var ary = null;
       var objRadio = $("input[name='year'");
+      if (strVal == null) {
+        strVal = "";
+      }
       if (strVal == "*") {
         objRadio.eq(1).attr("checked", "checked");
       } else if (strVal.split('-').length > 1) {

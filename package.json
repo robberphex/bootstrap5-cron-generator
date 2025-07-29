@@ -1,6 +1,6 @@
 {
     "name": "@robberphex/bootstrap5-cron-generator",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "基于bootstrap5，用来生成quartz cron表达式，可配置弹出窗口的位置。",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
